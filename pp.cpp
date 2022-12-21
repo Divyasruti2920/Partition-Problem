@@ -30,8 +30,7 @@ bool isPartiion(int array[], int n)
  partition_array[i][j] = partition_array[i][j-1];
  if(i >= array[j-1])
  {
- partition_array[i][j] = partition_array[i][j] || partition_array[i - array[j-
-1]][j-1];
+ partition_array[i][j] = partition_array[i][j] || partition_array[i - array[j-1]][j-1];
  }
  } 
  } 
